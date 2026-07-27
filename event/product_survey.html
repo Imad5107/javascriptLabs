@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Product Survey</h1>
+    <h2>We value your feedback!</h2>
+    <label for="name">Name:</label>
+    <input
+      type="text"
+      id="name"
+      placeholder="Your Name"
+      name="name"
+      required
+    /><br /><br />
+    <label for="age">Age:</label> <br />
+    <input
+      type="number"
+      id="age"
+      placeholder="Your Age"
+      name="age"
+      required
+    /><br /><br />
+    <label for="email">Email:</label> <br />
+    <input
+      type="email"
+      id="email"
+      placeholder="Your Email"
+      name="email"
+      required
+    /><br /><br />
+
+    <label for="job">Job:</label> <br />
+    <input
+      type="text"
+      id="job"
+      placeholder="Your Job"
+      name="job"
+      required
+    /><br /><br />
+
+    <label for="designation">Designation:</label> <br />
+    <input
+      type="text"
+      id="designation"
+      placeholder="Your Designation"
+      name="designation"
+      required
+    /><br /><br />
+
+    <label for="product_type">Product Type:</label> <br />
+    <select id="product_type" name="product_type" required>
+      <option value="">Select Product Type</option>
+      <option value="electronics">Electronics</option>
+      <option value="clothing">Clothing</option>
+      <option value="home_appliances">Home Appliances</option>
+      <option value="books">Books</option>
+      <option value="other">Other</option></select
+    ><br /><br />
+
+    <label for="feedbackText">Feedback:</label> <br />
+    <textarea
+      id="feedbackText"
+      placeholder="Your Feedback"
+      name="feedbackText"
+      required
+    ></textarea
+    ><br /><br />
+
+    <button id="submitBtn" onclick="submitFeedback()">Submit Feedback</button>
+
+    <hr />
+
+    <div id="userInfo" style="display: none">
+      <h2>User Information</h2>
+      <p><strong>Name:</strong> <span id="displayName"></span></p>
+      <p><strong>Age:</strong> <span id="displayAge"></span></p>
+      <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+      <p><strong>Job:</strong> <span id="displayJob"></span></p>
+      <p><strong>Designation:</strong> <span id="displayDesignation"></span></p>
+      <p>
+        <strong>Product Type:</strong> <span id="displayProductType"></span>
+      </p>
+      <p><strong>Feedback:</strong> <span id="displayFeedbackText"></span></p>
+    </div>
+  </body>
+</html>
+
+<script src="product_survey.js"></script>
